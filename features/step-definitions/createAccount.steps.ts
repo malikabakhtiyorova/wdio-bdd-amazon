@@ -14,7 +14,6 @@ When(
   /^The user enters the correct name, email and password from header$/,
   async () => {
     await createAccountTask.clickCreateAccStartHereHeader();
-    await browser.pause(6000)
     await createAccountTask.amazonCreateAccount(
       process.env.NAME || '',
       process.env.EMAIL || '',

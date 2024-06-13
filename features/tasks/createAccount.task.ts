@@ -5,7 +5,6 @@ export class CreateAccountTask extends CreateAccountPage {
   }
 
   public async clickCreateAccStartHereHeader() {
-   await browser.pause(2000)
     await this.accountAndList.moveTo();
     await this.startHereAccAndList.click();
   }

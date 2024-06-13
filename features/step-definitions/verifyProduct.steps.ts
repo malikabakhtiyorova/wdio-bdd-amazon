@@ -10,7 +10,6 @@ Given(/^The user enters Product page$/, async () => {
 });
 
 When(/^The user looks for "About this item" section$/, async () => {
-  await browser.pause(5000)
   await expect(verifyProductPage.aboutThisProduct).toExist();
 });
 
@@ -21,7 +20,6 @@ Then(/^5 bullets are present for product description$/, async () => {
 });
 
 When(/^The user looks for product specs$/, async () => {
-  await browser.pause(5000);
   await expect(verifyProductPage.productSpecs).toExist();
 });
 
